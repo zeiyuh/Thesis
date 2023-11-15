@@ -397,7 +397,7 @@ void loop() {
                
                  bool timeloop1 = false;
                  while (timeloop1 == false){
-                 uint32_t pulseperiod_1 = 0.5 * 60000L;       // 1 minute loop
+                 uint32_t pulseperiod_1 = 0.25 * 60000L;       // 1 minute loop
                  for( uint32_t pulseStart_1 = millis();  (millis()-pulseStart_1) < pulseperiod_1;  ){ 
                   long irValue = particleSensor.getIR();
                   if (checkForBeat(irValue) == true){ // check for finger
@@ -517,7 +517,7 @@ void loop() {
                    
                      bool timeloop2 = false;
                      while (timeloop2 == false){
-                     uint32_t pulseperiod_2 = 0.5 * 60000L;       // 1 minute loop
+                     uint32_t pulseperiod_2 = 0.25 * 60000L;       // 1 minute loop
                      for( uint32_t pulseStart_2 = millis();  (millis()-pulseStart_2) < pulseperiod_2;  ){
                       long irValue = particleSensor.getIR();
                       if (checkForBeat(irValue) == true){ // check for finger
@@ -639,7 +639,7 @@ void loop() {
                    
                      bool timeloop3 = false;
                      while (timeloop3 == false){
-                     uint32_t pulseperiod_3 = 0.5 * 60000L;       // 1 minute loop
+                     uint32_t pulseperiod_3 = 0.25 * 60000L;       // 1 minute loop
                      for( uint32_t pulseStart_3 = millis();  (millis()-pulseStart_3) < pulseperiod_3;  ){
                       long irValue = particleSensor.getIR();
                       if (checkForBeat(irValue) == true){ // check for finger
@@ -762,7 +762,7 @@ void loop() {
                    
                      bool timeloop4 = false;
                      while (timeloop4 == false){
-                     uint32_t pulseperiod_4 = 1 * 60000L;       // 1 minute loop
+                     uint32_t pulseperiod_4 = 0.25 * 60000L;       // 1 minute loop
                      for( uint32_t pulseStart_4 = millis();  (millis()-pulseStart_4) < pulseperiod_4;  ){
                       long irValue = particleSensor.getIR();
                       if (checkForBeat(irValue) == true){ // check for finger
